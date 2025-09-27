@@ -1,15 +1,7 @@
-number  = 11  # Put the number you want to check if it is prime or not a prime over here
-flag = False
+# Power series with fixed number of terms
 
-if number>1:
-    for i in range(2,11):
+n = 5  # You can change this number if you want more terms
 
-        if (number % i) == 0:
-            flag = True
-            break
-
-        if flag:
-            print(number," is not a prime number")
-
-        else:
-            print(number, "is a prime number")
+print("Power Series:")
+for i in range(1, n + 1):
+    print(i ** i, end=" ")
